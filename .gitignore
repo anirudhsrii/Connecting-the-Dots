@@ -1,0 +1,126 @@
+# ==========================================
+# Adobe Hackathon Project - .gitignore
+# ==========================================
+
+# ===== OPERATING SYSTEM =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== EDITOR AND IDE =====
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*~
+
+# ===== ENVIRONMENT CONFIGURATIONS =====
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/pdf-reader-ui/.env
+frontend/pdf-reader-ui/.env.*
+!frontend/pdf-reader-ui/.env.example
+
+# ===== PYTHON BACKEND =====
+# Virtual environments
+backend/.venv/
+backend/venv/
+backend/env/
+.venv/
+venv/
+env/
+
+# Python cache and compiled files
+backend/__pycache__/
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# Testing and coverage
+.coverage
+.pytest_cache/
+.mypy_cache/
+
+# ===== NODE.JS / REACT FRONTEND =====
+# Dependencies
+frontend/pdf-reader-ui/node_modules/
+node_modules/
+
+# Build outputs
+frontend/pdf-reader-ui/dist/
+frontend/pdf-reader-ui/build/
+dist/
+build/
+
+# Cache and temporary files
+frontend/pdf-reader-ui/.cache/
+frontend/pdf-reader-ui/.vite/
+frontend/pdf-reader-ui/.next/
+.cache/
+.vite/
+.next/
+
+# TypeScript and bundler cache
+*.tsbuildinfo
+.npm
+*.local
+
+# ===== LOGS =====
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== USER-GENERATED CONTENT =====
+# Backend user uploads and generated files
+backend/document_library/
+backend/audio/
+backend/generated_audio/
+backend/uploads/
+backend/temp/
+
+# Audio files
+*.wav
+*.mp3
+*.m4a
+*.ogg
+*.flac
+!backend/sample_audio.*
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ===== LARGE FILES =====
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ===== BACKUP FILES =====
+*.bak
+*.tmp
+*.temp
+*.backup
+
+# ===== DEPLOYMENT =====
+.vercel
+.netlify
+.herokuapp/
+
+# ===== SECURITY =====
+# API keys and secrets
+config.json
+secrets.json
+*.pem
+*.key
